@@ -10,6 +10,8 @@ You will need to define a `wpa_supplicant.conf` file for your particular wireles
 
 More information on the `wpa_supplicant.conf` file can be found [here](wireless-cli.md).
 
+**NOTE**: If you boot your Raspberry Pi without configuring the `country` setting in `wpa_supplicant.conf`, your WiFi may be persistently disabled.  In this case, you will need to re-write the sdcard with a fresh image and include a properly configured `/boot/wpa_supplicant.conf`.
+
 ## Enabling SSH
 
 SSH can be enabled by placing a file called `ssh` in to the boot folder. This flags the Pi to enable the SSH system on the next boot.
